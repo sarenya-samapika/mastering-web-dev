@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>css box model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            background-color: lightblue;
+        }
+        .box1{
+            color: yellow;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid black;
+        }
+        .box2{
+            color: red;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid black;
+        }
+        
+    </style>
 </head>
 <body>
-    
+    <div class="box box1">This is a paragraph inside the box.</div>
+    <div class="box box2">This is another paragraph inside the box.</div>
 </body>
 </html>
