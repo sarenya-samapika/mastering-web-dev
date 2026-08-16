@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 433px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+
+        .box1{
+            background-color: aqua;
+            /*position: sticky;
+            top: 0px;*/
+            position: absolute;
+            top: 0px;     
+            /*0px from nearest positioned ancester
+            goes to div but div is not positioned
+            then goes to body but body is not positioned
+            then to html neither is html positioned but nothing above html so takes 0 px from html*/
+        }
+        .box2{
+            background-color: antiquewhite;
+           /* position: relative;
+            bottom: 30px;
+            left: 30px;*/
+        
+        }
+        .box3{
+            background-color: beige;
+        }
+        .box4{
+            background-color: plum;
+        }
+
+        .parent{
+            padding: 43px;
+            margin: 34px;
+            border: 3px solid blueviolet;
+            /*position:absolute; now box1 is 0 px relative to parent div*/
+        }
+    </style>
+</head>
+<body>
+    <div class = "parent">
+        <div class = "box box1">box 1</div>
+        <div class = "box box2">box 2</div>
+        <div class = "box box3">box 3</div>
+        <div class = "box box4">box 4</div>
+    </div>
+    
+</body>
+</html>
